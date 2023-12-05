@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mastermind !</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Mastermind</h1>
+      <p>
+        Devine la combinaison de ce code en entrant les bonnes couleurs (en
+        anglais) dans le bon ordre, séparées par une virgule et
+        <u>sans espace</u>.
+      </p>
+      <form action="">
+        <input type="text" id="userSuggest" placeholder="Code à 4 couleurs" />
+        <br />
+        <br />
+        <button type="submit" id="send">Envoyer</button>
+      </form>
+      <p>
+        Les <strong>couleurs possibles</strong> sont :
+        <br />
+        <br />
+        <span id="blue">blue</span> <span id="yellow">yellow</span>
+        <span id="red">red</span> <span id="green">green</span>
+        <span id="white">white</span> <span id="black">black</span>
+      </p>
+      <br />
+      <span id="arrayResponse"></span>
+      <br />
+      <div id="responseNumber"></div>
+      <br />
+      <div id="lives"></div>
+      <br />
+      <div id="displayTest"></div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
